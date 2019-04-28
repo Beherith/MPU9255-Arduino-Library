@@ -2,7 +2,7 @@
 #define MPU9255_H
 
 #include <Arduino.h>
-#include <Wire.h>
+
 
 ///modules (for enable / disable / reset functions)
 enum modules
@@ -150,6 +150,10 @@ public:
   double my_sensitivity;//Y axis
   double mz_sensitivity;//Z axis
 
+  //Override software SPI
+  int MPU9255_SCL = -1;
+  int MPU9255_SDA = -1;
+  
   private:
   void requestBytes(uint8_t address, uint8_t subAddress, uint8_t bytes);//request data
   uint8_t read(uint8_t address, uint8_t subAddress);//read one byte from selected register
@@ -169,6 +173,8 @@ public:
   int GX_offset;//X axis
   int GY_offset;//Y axis
   int GZ_offset;//Z axis
+  
+  
 
   //registers map
   enum registers
