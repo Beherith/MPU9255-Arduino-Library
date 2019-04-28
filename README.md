@@ -1,3 +1,5 @@
+# CHANGED TO USE SOFTWIRE instead Hardware I2C!
+
 # MPU9255-Arduino-Library
 [![Build Status](https://travis-ci.org/Bill2462/MPU9255-Arduino-Library.svg?branch=master)](https://travis-ci.org/Bill2462/MPU9255-Arduino-Library)
 [![GitHub release](https://img.shields.io/github/release/Bill2462/MPU9255-Arduino-Library.svg?maxAge=3600)](https://github.com/Bill2462/MPU9255-Arduino-Library/releases/latest)
